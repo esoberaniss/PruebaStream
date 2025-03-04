@@ -8,3 +8,4 @@ if st.button("Verify"):
 
 if verified:
     st.write("Verification successful!")
+    st.selectbox("Phase",options=("Hola","Mundo"))
