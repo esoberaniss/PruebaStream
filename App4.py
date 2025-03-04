@@ -9,7 +9,7 @@ if "verified" not in st.session_state:
 if st.button("Verify"):
     st.session_state.verified = True  # Guardar el estado
 
-if st.session_state.verified:
-    st.write("Verification successful!")
-    st.selectbox("Phase", options=("Hola", "Mundo"))
+    if st.session_state.verified:
+        st.write("Verification successful!")
+        st.selectbox("Phase", options=("Hola", "Mundo"))
 
